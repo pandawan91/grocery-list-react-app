@@ -1,0 +1,70 @@
+h1 {
+    color: black;
+}
+input {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+.group { 
+    position:relative; 
+    padding: 16px;
+}
+input:focus { outline:none; }
+
+/* LABEL ======================================= */
+label {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    padding: 16px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
