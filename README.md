@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This App is for evaluation purposes. You can add and delete items to the List.
+Build with the vuejs.
+
+check it out at https://grocery-list-react-app.web.app/
+
+
 ## Available Scripts
 
 In the project directory, you can run:
